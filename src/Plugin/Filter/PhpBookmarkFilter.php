@@ -4,6 +4,7 @@ namespace Drupal\php_bookmark_code\Plugin\Filter;
 
 use Drupal\filter\FilterProcessResult;
 use Drupal\filter\Plugin\FilterBase;
+use Drupal\Component\Render\Markup;
 
 /**
  * Provides a filter to replace bookmark placeholders with PHP code output.
@@ -52,7 +53,7 @@ class PhpBookmarkFilter extends FilterBase {
     };
 
     $new_text = preg_replace_callback($pattern, $callback, $text);
-    return new FilterProcessResult($new_text);
+    return new FilterProcessResult(Markup::create($new_text)); // for CKEditor compatibility
   }
 }
 

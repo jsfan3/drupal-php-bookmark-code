@@ -47,6 +47,12 @@ Then require the package:
 composer require jsfan3/php-bookmark-code:dev-main
 ```
 
+After that, you can always upgrade the module to the latest version:
+
+```bash
+composer update jsfan3/php-bookmark-code
+```
+
 ### Enabling the Module
 
 Enable the module using Drush or via the Drupal Extend UI:
@@ -54,6 +60,7 @@ Enable the module using Drush or via the Drupal Extend UI:
 ```bash
 drush en php_bookmark_code -y
 ```
+
 
 ### Configure the Module
 

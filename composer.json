@@ -1,0 +1,15 @@
+{
+  "name": "jsfan3/php-bookmark-code",
+  "description": "A Drupal 10 module that allows administrators to create bookmarks (placeholders) associated with custom PHP code blocks. When a bookmark is encountered in content, its PHP code is executed at that exact location, and its output replaces the bookmark.",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "drupal/core": "^10.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Drupal\\php_bookmark_code\\": "src/"
+    }
+  }
+}
+

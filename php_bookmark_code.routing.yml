@@ -1,0 +1,8 @@
+php_bookmark_code.settings:
+  path: '/admin/config/system/php-bookmark-code'
+  defaults:
+    _form: '\Drupal\php_bookmark_code\Form\PhpBookmarkCodeSettingsForm'
+    _title: 'PHP Bookmark Code Blocks'
+  requirements:
+    _permission: 'administer site configuration'
+

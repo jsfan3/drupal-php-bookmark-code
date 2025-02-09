@@ -1,0 +1,7 @@
+php_bookmark_code.settings:
+  title: 'PHP Bookmark Code'
+  description: 'Manage PHP bookmark code blocks.'
+  parent: system.admin_config_system
+  route_name: php_bookmark_code.settings
+  weight: 100
+

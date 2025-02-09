@@ -1,0 +1,7 @@
+name: PHP Bookmark Code
+type: module
+description: 'Provides an interface for creating bookmarks that execute custom PHP code when used in content. A text filter replaces bookmark placeholders with the result of the executed PHP code.'
+configure: '/admin/config/system/php-bookmark-code'
+core_version_requirement: ^10
+package: Custom
+

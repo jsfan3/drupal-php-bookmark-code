@@ -55,5 +55,12 @@ class PhpBookmarkFilter extends FilterBase {
     $new_text = preg_replace_callback($pattern, $callback, $text);
     return new FilterProcessResult(Markup::create($new_text)); // for CKEditor compatibility
   }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function isFilterHtmlSafe() {
+    return TRUE;
+  }
 }
 

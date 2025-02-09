@@ -13,7 +13,7 @@ use Drupal\Core\Render\Markup;
  *   id = "filter_php_bookmark",
  *   title = @Translation("PHP Bookmark Filter"),
  *   description = @Translation("Replaces bookmark placeholders in content with the output of associated PHP code."),
- *   type = Drupal\filter\Plugin\FilterInterface::TYPE_HTML_RESTRICTED
+ *   type = Drupal\filter\Plugin\FilterInterface::TYPE_HTML
  * )
  */
 class PhpBookmarkFilter extends FilterBase {

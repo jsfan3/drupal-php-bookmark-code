@@ -59,14 +59,7 @@ class PhpBookmarkFilter extends FilterBase {
   /**
    * {@inheritdoc}
    */
-  public function isFilterHtmlSafe() {
-    return TRUE;
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function isFilterHtmlSafe($format_id) {
+  public function isFilterHtmlSafe($format_id = NULL) {
     return TRUE;
   }
 

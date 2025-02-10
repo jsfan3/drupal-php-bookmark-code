@@ -13,7 +13,7 @@ use Drupal\Core\Render\Markup;
  *   id = "filter_php_bookmark",
  *   title = @Translation("PHP Bookmark Filter"),
  *   description = @Translation("Replaces bookmark placeholders in content with the output of associated PHP code."),
- *   type = 0
+ *   type = Drupal\filter\Plugin\FilterInterface::TYPE_TRANSFORM_IRREVERSIBLE
  * )
  */
 class PhpBookmarkFilter extends FilterBase {
@@ -53,7 +53,7 @@ class PhpBookmarkFilter extends FilterBase {
     };
 
     $new_text = preg_replace_callback($pattern, $callback, $text);
-    return new FilterProcessResult(Markup::create($new_text)); // for CKEditor compatibility
+    return new FilterProcessResult($new_text);
   }
 
   /**
